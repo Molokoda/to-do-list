@@ -1,0 +1,184 @@
+body{
+	background-image: url(img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.agreement{
+	display: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	opacity: 0.9;
+	z-index: 5;
+}
+
+.agreement button{
+	margin: 0 auto;
+	width: 5vw;
+	background-size: cover;
+	border: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(img/iconYes.png);
+}
+
+.agreement button:last-child{
+	width: 3vw;
+	background-image: url(img/iconDelete.png);
+}
+
+.agreement p{
+	width: 100%;
+	font-size: 2vw;
+}
+
+.addElement{
+	display: flex;
+	justify-content: flex-start;
+	padding: 1%;
+	margin-bottom: 3%;
+	background-color: #799775;
+}
+
+.addElement button{
+	margin-right: 1%;
+	width: 48px;
+	height: 48px;
+	border: none;
+	background-image: url(img/iconAdd.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: transparent;
+}
+
+.addElement input{
+	font-size: 1vw;
+	border: none;
+	background-color: transparent;
+	color: white;
+}
+
+.addElement input:last-child{
+	margin-left: 1%;
+	width: 90%;
+	border-bottom: 1px solid white;
+}
+.addElement input::placeholder{
+	font-size: 1vw;
+	color: white;
+}
+
+.lists{
+	position: relative; 
+}
+
+.lists div, .tab-title{
+    display: inline-block;
+}
+.lists div input[type="radio"] { 
+	display: none; 
+}
+
+.tab-title {
+    background: #ccc; 
+    padding: 5px 10px; 
+    border: 1px solid #666;
+	border-bottom: none;
+	opacity: 0.9;
+}
+.tab-content{
+	display: none; 
+    position: absolute; 
+    border: 1px solid #666; 
+    padding: 10px; 
+    left: 0; 
+	width: calc(100% - 20px);
+	flex-wrap:  wrap; 
+	font-size: 1vw;
+	background-color: white;
+	opacity: 0.8;
+}
+
+.counter{
+	margin-left: 1%;
+	width: 1%;
+}
+
+.clear{
+	margin-left: 91%;
+}
+
+.lists div :checked + .tab-title {
+    position: relative; 
+    background: #fff; 
+    top: 1px; 
+    z-index: 1; 
+}
+
+.lists div :checked ~ .tab-content {
+    display: flex;
+}
+
+.lists ul{
+	padding: 0;
+	width: 100%;
+}
+
+.lists ul li{
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 2% 2% 0 2%;
+	width: 100%;
+	list-style-type: none;
+	border-bottom: 1px solid;
+	font-size: 1vw;
+}
+
+.lists ul li span:nth-child(1){
+	box-sizing: border-box;
+	width: 5%;
+}
+
+.lists ul li span:nth-child(2){
+	box-sizing: border-box;
+	width: 10%;
+}
+
+.lists ul li span:nth-child(3){
+	box-sizing: border-box;
+	width: 81%;
+}
+
+.lists button{
+	width: 48px;
+	height: 48px;
+	border: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img/iconClear.png);
+}
+
+.lists ul li button{
+	padding: 0;
+	width: 2vw;
+	border: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(img/iconNext.png);
+}
+
+.lists ul li button:last-child{
+	margin-left: 1%;
+	background-image: url(img/iconDelete.png);
+}

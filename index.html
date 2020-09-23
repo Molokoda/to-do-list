@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<title>mini project</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="agreement">
+		<p>Are you sure ?</p>
+		<button id = "yes"></button>
+		<button id = "no"></button>
+	</div>
+	<div class="addElement">
+		<button id="add"></button>
+		<input type="date">
+		<input placeholder="to do" maxlength="150">
+	</div>
+	<div class="lists">
+   		<div class="todo">
+		    <input type="radio" id="todoTab" name="tab-group" checked>
+		    <label for="todoTab" class="tab-title">To do</label> 
+		    <section class="tab-content">
+				<span>Events:</span>
+				<span class="counter">0</span>
+				<button class="clear" id="todoClear"></button>
+				<ul>
+					
+				</ul>
+		    </section>
+		</div> 
+		<div class="prog">
+		    <input type="radio" id="progTab" name="tab-group">
+		    <label for="progTab" class="tab-title">In progress</label> 
+		    <section class="tab-content">
+		    	<span>Events:</span>
+				<span class="counter">0</span>
+				<button class="clear" id="progClear"></button>
+				<ul>
+					
+				</ul>
+		    </section>
+	   </div>
+	   <div class="done">
+		    <input type="radio" id="doneTab" name="tab-group">
+		    <label for="doneTab" class="tab-title">Done</label> 
+		    <section class="tab-content">
+		    	<span>Events:</span>
+				<span class="counter">0</span>
+				<button class="clear" id="doneClear"></button>
+				<ul>
+					
+				</ul>
+			</section> 
+	   </div> 
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
